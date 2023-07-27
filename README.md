@@ -48,4 +48,4 @@ Step 5: Ciphertext
 Concatenate the final values of L and R: Ciphertext = "TUVW" + "PQRS" = "TUVWPQRS"
 _________________________________________________________________________________________________________________________________________________________________________
 # DECIPHERING
-Use same algorithm but with chiphertext
+Use same algorithm but with chiphertext :)
