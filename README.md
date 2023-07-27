@@ -1,7 +1,7 @@
 # Crypto_ACORN-128
 This is my realization of Acorn-128 Chipher as course work (not verified as true calculated, somewhich functions of original will not realized)
 
-#ALL CALCULATES IS ONLY +- EXAMPLES OF ANSWERS
+# ALL CALCULATES IS ONLY +- EXAMPLES OF ANSWERS
 
 Step 1: Key Expansion
 Choose a secret key: "ABCDEFGHIJKLMNOP"<br />
@@ -47,5 +47,5 @@ Step 5: Ciphertext
 
 Concatenate the final values of L and R: Ciphertext = "TUVW" + "PQRS" = "TUVWPQRS"
 _________________________________________________________________________________________________________________________________________________________________________
-#DECIPHERING
+# DECIPHERING
 Use same algorithm but with chiphertext
