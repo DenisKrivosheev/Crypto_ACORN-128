@@ -27,12 +27,12 @@ Calculate T2 = (L + (2 * R) + "VWXY") mod 2^32 = "DEFG"<br />
 Update L = "ZABC", R = "DEFG"<br />
 
 Round 2:
-Generate round key RK: Let's assume RK = "5678"
-Calculate K4 = (ROL("RSTU", 1) + ROL("DEFG", 1)) XOR (ROR("ABCD", 1) + ROR("5678", 1)) = "HIJK"
-Calculate K5 = (ROL("VWXY", 1) + ROL("ABCD", 1)) XOR (ROR("DEFG", 1) + ROR("5678", 1)) = "LMNO"
-Calculate T1 = (L + R + "HIJK") mod 2^32 = "PQRS"
-Calculate T2 = (L + (2 * R) + "LMNO") mod 2^32 = "TUVW"
-Update L = "PQRS", R = "TUVW"
+Generate round key RK: Let's assume RK = "5678"<br />
+Calculate K4 = (ROL("RSTU", 1) + ROL("DEFG", 1)) XOR (ROR("ABCD", 1) + ROR("5678", 1)) = "HIJK"<br />
+Calculate K5 = (ROL("VWXY", 1) + ROL("ABCD", 1)) XOR (ROR("DEFG", 1) + ROR("5678", 1)) = "LMNO"<br />
+Calculate T1 = (L + R + "HIJK") mod 2^32 = "PQRS"<br />
+Calculate T2 = (L + (2 * R) + "LMNO") mod 2^32 = "TUVW"<br />
+Update L = "PQRS", R = "TUVW"<br />
 
 Continue the remaining 18 rounds, following the same steps.
 
