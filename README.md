@@ -4,8 +4,8 @@ This is my realization of Acorn-128 Chipher as course work (not verified as true
 #ALL CALCULATES IS ONLY +- EXAMPLES OF ANSWERS
 
 Step 1: Key Expansion
-Choose a secret key: "ABCDEFGHIJKLMNOP"\n
-Split the key into four 32-bit words: K0 = "ABCD", K1 = "EFGH", K2 = "IJKL", K3 = "MNOP"\n
+Choose a secret key: "ABCDEFGHIJKLMNOP"<br />
+Split the key into four 32-bit words: K0 = "ABCD", K1 = "EFGH", K2 = "IJKL", K3 = "MNOP"<br />
 
 Step 2: Nonce
 Choose a nonce: "12345678"
@@ -20,7 +20,7 @@ Perform 20 encryption rounds. For each round:
 
 Round 1:
 Generate round key RK: Let's assume RK = "1234"
-Calculate K4 = (ROL("ABCD", 1) + ROL("IJKL", 1)) XOR (ROR("MNOP", 1) + ROR("1234", 1)) = "RSTU"\n
+Calculate K4 = (ROL("ABCD", 1) + ROL("IJKL", 1)) XOR (ROR("MNOP", 1) + ROR("1234", 1)) = "RSTU"<br />
 Calculate K5 = (ROL("EFGH", 1) + ROL("MNOP", 1)) XOR (ROR("IJKL", 1) + ROR("1234", 1)) = "VWXY"
 Calculate T1 = (L + R + "RSTU") mod 2^32 = "ZABC"
 Calculate T2 = (L + (2 * R) + "VWXY") mod 2^32 = "DEFG"
