@@ -1,11 +1,11 @@
 # Crypto_ACORN-128
 This is my realization of Acorn-128 Chipher as course work (not verified as true calculated, somewhich functions of original will not realized)
 
-ALL CALCULATES IS ONLY +- EXAMPLES OF ANSWERS
+#ALL CALCULATES IS ONLY +- EXAMPLES OF ANSWERS
 
 Step 1: Key Expansion
-Choose a secret key: "ABCDEFGHIJKLMNOP"
-Split the key into four 32-bit words: K0 = "ABCD", K1 = "EFGH", K2 = "IJKL", K3 = "MNOP"
+Choose a secret key: "ABCDEFGHIJKLMNOP"\n
+Split the key into four 32-bit words: K0 = "ABCD", K1 = "EFGH", K2 = "IJKL", K3 = "MNOP"\n
 
 Step 2: Nonce
 Choose a nonce: "12345678"
@@ -20,7 +20,7 @@ Perform 20 encryption rounds. For each round:
 
 Round 1:
 Generate round key RK: Let's assume RK = "1234"
-Calculate K4 = (ROL("ABCD", 1) + ROL("IJKL", 1)) XOR (ROR("MNOP", 1) + ROR("1234", 1)) = "RSTU"
+Calculate K4 = (ROL("ABCD", 1) + ROL("IJKL", 1)) XOR (ROR("MNOP", 1) + ROR("1234", 1)) = "RSTU"\n
 Calculate K5 = (ROL("EFGH", 1) + ROL("MNOP", 1)) XOR (ROR("IJKL", 1) + ROR("1234", 1)) = "VWXY"
 Calculate T1 = (L + R + "RSTU") mod 2^32 = "ZABC"
 Calculate T2 = (L + (2 * R) + "VWXY") mod 2^32 = "DEFG"
@@ -47,5 +47,5 @@ Step 5: Ciphertext
 
 Concatenate the final values of L and R: Ciphertext = "TUVW" + "PQRS" = "TUVWPQRS"
 _________________________________________________________________________________________________________________________________________________________________________
-FOR DECIPHERING
+#DECIPHERING
 Use same algorithm but with chiphertext
